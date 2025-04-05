@@ -22,7 +22,7 @@ const loginadmin = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/login",
+        "https://hospital-management-system-oo6r.onrender.com/api/v1/users/login",
         { email, password, confirmPassword: password, role: "Admin" },
         {
           headers: { "Content-Type": "application/json" },
