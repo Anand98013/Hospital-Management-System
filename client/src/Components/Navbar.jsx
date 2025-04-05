@@ -30,7 +30,7 @@ export const Navbar = () => {
   const handleLogout = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/api/v1/users/patient/logout",
+        "https://hospital-management-system-oo6r.onrender.com/api/v1/users/patient/logout",
         {
           withCredentials: true, // Include cookies in the request
           headers: { "Content-Type": "application/json" },
@@ -49,7 +49,7 @@ export const Navbar = () => {
   const handleLogoutDoctor = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/api/v1/users/doctor/logout",
+        "https://hospital-management-system-oo6r.onrender.com/api/v1/users/doctor/logout",
         {
           withCredentials: true, // Include cookies in the request
           headers: { "Content-Type": "application/json" },
