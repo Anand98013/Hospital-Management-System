@@ -16,7 +16,7 @@ const PatientHome = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/appoinments/getall",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/appoinments/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
