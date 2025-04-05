@@ -15,7 +15,7 @@ const AdminHome = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/users/doctors",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/users/doctors",
           // "https://e-healthcare-management-system-2.onrender.com/users/doctors",
           {
             withCredentials: true,
@@ -38,7 +38,7 @@ const AdminHome = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/appoinments/getall",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/appoinments/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -53,7 +53,7 @@ const AdminHome = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/users/admin/",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/users/admin/",
           {
             withCredentials: true,
           }
