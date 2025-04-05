@@ -38,7 +38,7 @@ const AppointForm = ({ data, onClose}) => {
       // const doclast = doctor[1];
       // const dept = doctor[2];
       const response= await axios.post(
-        "http://localhost:8000/api/v1/appoinments/post",
+        "https://hospital-management-system-oo6r.onrender.com/api/v1/appoinments/post",
         {
           firstName,
           lastName,
