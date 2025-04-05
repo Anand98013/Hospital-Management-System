@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8000;
 app.use(
   cors({
     // origin: process.env.CLINET_ORIGIN,
-    origin: "http://localhost:5173",  
+    origin: "https://hospital-management-system-frontend-e38o.onrender.com",  
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization",
     credentials: true,
