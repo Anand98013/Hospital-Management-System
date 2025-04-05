@@ -26,7 +26,7 @@ const AddAdmin = () => {
     try {
       await axios
         .post(
-          "http://localhost:8000/api/v1/users/admin/add",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/users/admin/add",
           // add the route here and keep the localhost url commented
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
