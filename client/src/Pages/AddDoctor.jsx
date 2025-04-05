@@ -60,7 +60,7 @@ const AddDoctor = () => {
       formData.append("avatar", docAvatar);
       await axios
         .post(
-          "http://localhost:8000/api/v1/users/doctor/register",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/users/doctor/register",
           // "https://e-healthcare-management-system-2.onrender.com/api/v1/users/doctor/register",
           formData,
           {
