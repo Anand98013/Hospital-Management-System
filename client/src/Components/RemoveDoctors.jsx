@@ -9,7 +9,7 @@ const RemoveDoctors = ({ data }) => {
   const handleRemoveDoctor = async (doctorID) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:8000/api/v1/users/doctor/${doctorID}`,
+        `https://hospital-management-system-oo6r.onrender.com/api/v1/users/doctor/${doctorID}`,
         {
           withCredentials: true,
         }
