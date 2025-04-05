@@ -16,7 +16,7 @@ const DoctorHome = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/appoinments/getall",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/appoinments/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -33,7 +33,7 @@ const DoctorHome = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:8000/api/v1/appoinments/update/${appointmentId}`,
+        `https://hospital-management-system-oo6r.onrender.com/api/v1/appoinments/update/${appointmentId}`,
         { status }
         //{ withCredentials: true }
       );
