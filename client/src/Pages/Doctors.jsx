@@ -15,7 +15,7 @@ const Doctors = () => {
       try {
         const { data } = await axios.get(
           // "https://e-healthcare-management-system-2.onrender.com/api/v1/users/doctors",
-          "http://localhost:8000/api/v1/users/doctors",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/users/doctors",
           {
             withCredentials: true
           }
