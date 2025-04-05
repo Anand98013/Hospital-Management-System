@@ -14,7 +14,7 @@ const Message = () => {
     try {
       await axios
         .post(
-          "http://localhost:8000/api/v1/message/send",
+          "https://hospital-management-system-oo6r.onrender.com/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
