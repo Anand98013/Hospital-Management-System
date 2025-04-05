@@ -18,7 +18,7 @@ const Sidebar = () => {
   const handleLogout = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/api/v1/users/admin/logout",
+        "https://hospital-management-system-oo6r.onrender.com/api/v1/users/admin/logout",
         {
           withCredentials: true, // Include cookies in the request
           headers: { "Content-Type": "application/json" },
